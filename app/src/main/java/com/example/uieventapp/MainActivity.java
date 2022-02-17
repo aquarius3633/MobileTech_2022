@@ -15,9 +15,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         EditText editText = (EditText) findViewById (R.id.inputText);
-        editText.onClickListener (new View.OnClicklister(){
+        editText.setOnClickListener (new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                empty(v);
+            }
+        });
 
-        }
     }
 
     public void displayMessage (View view) {
